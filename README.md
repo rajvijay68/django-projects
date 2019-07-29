@@ -8,3 +8,5 @@
 2. [Question Answering Site](quora)
 
 3. [Simple Social Auth App](social-auth-project) - A Simple project to demonstrate usage of social auth (github,facebook)
+
+4. [Shopping cart app](Shopping_cart)
