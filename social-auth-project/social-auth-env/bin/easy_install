@@ -1,5 +1,4 @@
 #!/home/rajvijay/Desktop/PROJECTS/DJANGO/social-auth-project/social-auth-env/bin/python
-
 # -*- coding: utf-8 -*-
 import re
 import sys
