@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <h1 class="jumbotron">
+        Login
+    </h1>
+    {% if form.errors %}
+    <p>There's something wrong!!</p>
+    {% endif %}
+
+    {% if next %}
+    <p>Are you allowed to access that page?</p>
+    {% endif %}
+
+
+    <form class="form" align="center" method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+
+        <p>Username : </p>{{ form.username }}
+        <p>Password : </p>{{ form.password }}
+        
+        <p>
+            <input class="btn btn-success" type="submit" name="login" value="login">
+            <input type="hidden" name="next" value="{{ next }}">
+        </p>
+    </form>
+</body>
+</html>
