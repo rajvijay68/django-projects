@@ -1,0 +1,15 @@
+li a {
+    color: green;
+}
+
+
+* {
+    margin: 20px;
+    background: black url("images/background.gif") no-repeat;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: bolder;
+}

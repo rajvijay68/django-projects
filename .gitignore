@@ -1,6 +1,8 @@
-*env*
-/.vscode
-.env
+.vscode/
+
+*env/
+*.sqlite3
+
 *.log
 *.pot
 *.pyc

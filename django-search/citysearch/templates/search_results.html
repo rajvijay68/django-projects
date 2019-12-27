@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <h1>City Search Results</h1>
+
+    <ul>
+        {% for city in object_list %}
+        <li>
+            {{ city.name }} | {{ city.state }}
+        </li>
+        {% endfor %}
+    </ul>
+</center>
+{% endblock %}
