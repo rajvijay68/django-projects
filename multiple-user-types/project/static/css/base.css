@@ -1,0 +1,13 @@
+body {
+    background: rgb(207, 247, 146);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -3,16 +3,9 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class BaseUser(AbstractUser):
-    # username = None
-    email = models.EmailField(max_length=255, unique=True)
-
-
-    # USERNAME_FIELD = 'email'
-
-    REQUIRED_FIELDS = ['email']
-
-    # def get_username(self):
-    #     return self.email
+ 
+    def __str__(self):
+        return self.email
 
 
 class Student(BaseUser):
@@ -25,6 +18,8 @@ class Student(BaseUser):
     class Meta:
         verbose_name = 'Students'
         verbose_name_plural = 'Students'
+    
+    
 
 class Professor(BaseUser):
     dept = models.CharField(max_length=100)
